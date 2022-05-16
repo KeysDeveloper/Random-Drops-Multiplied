@@ -1,0 +1,6 @@
+name: Randomitems
+version: '${project.version}'
+main: com.keys.randomitems.Main
+api-version: 1.18
+authors: [ keys ]
+description: there are random drops each time you break a block
