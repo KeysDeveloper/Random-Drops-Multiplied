@@ -74,6 +74,9 @@ public final class Main extends JavaPlugin implements Listener {
             e.getEntity().getLocation().getWorld().dropItemNaturally(e.getEntity().getLocation(), new ItemStack(Material.matchMaterial(getConfig().get(e.getEntity().getType().toString()).toString()), ran.nextInt(500)+1));
         }
     }
+    
+    @EventHandler
+    public void onEntityDrop(EntityDropItemEvent e) { e.setCancelled(true); }
 
 
 }
